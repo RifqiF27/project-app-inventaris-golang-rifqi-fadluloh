@@ -44,18 +44,18 @@ func NewRouter() http.Handler {
 		r.Route("/api/categories", func(r chi.Router) {
 			// r.Use(middleware_auth.SessionMiddleware(&srv))
 			r.Get("/", c.GetCategories)
+			r.Post("/", c.CreateCategory)
 			r.Get("/{id}", c.GetCategoryByID)
 			r.Put("/{id}", c.UpdateCategory)
 			r.Delete("/{id}", c.DeleteCategory)
-			r.Post("/add", c.CreateCategory)
 		})
 		r.Route("/api/items", func(r chi.Router) {
 			// r.Use(middleware_auth.SessionMiddleware(&srv))
 			r.Get("/", i.GetItems)
+			r.Post("/", i.CreateItem)
 			r.Get("/{id}", i.GetItemByID)
 			r.Put("/{id}", i.UpdateItem)
 			r.Delete("/{id}", i.DeleteItem)
-			r.Post("/add", i.CreateItem)
 			r.Get("/replacement-needed", i.GetItemsReplacementNeeded)
 
 		})

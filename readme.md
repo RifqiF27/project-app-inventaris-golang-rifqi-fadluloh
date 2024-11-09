@@ -66,7 +66,7 @@ Sistem Manajemen Inventaris ini adalah aplikasi berbasis web yang dibangun denga
 
 - `GET /api/categories` - Mendapatkan semua kategori.
 - `GET /api/categories/{id}` - Mendapatkan kategori berdasarkan ID.
-- `POST /api/categories/add` - Menambah kategori baru.
+- `POST /api/categories` - Menambah kategori baru.
 - `PUT /api/categories/{id}` - Memperbarui kategori berdasarkan ID.
 - `DELETE /api/categories/{id}` - Menghapus kategori berdasarkan ID.
 
@@ -74,7 +74,7 @@ Sistem Manajemen Inventaris ini adalah aplikasi berbasis web yang dibangun denga
 
 - `GET /api/items` - Mendapatkan semua item.
 - `GET /api/items/{id}` - Mendapatkan item berdasarkan ID.
-- `POST /api/items/add` - Menambah item baru.
+- `POST /api/items` - Menambah item baru.
 - `PUT /api/items/{id}` - Memperbarui item berdasarkan ID.
 - `DELETE /api/items/{id}` - Menghapus item berdasarkan ID.
 - `GET /api/items/replacement-needed` - Mendapatkan daftar item yang memerlukan penggantian.
